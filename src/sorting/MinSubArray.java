@@ -20,7 +20,7 @@ public class MinSubArray {
 		end = size - 1;
 
 		// find prospective start index
-		for (int i = 0; i < size-1; i++) {
+		for (int i = 0; i < size - 1; i++) {
 			if (arr[i] > arr[i + 1]) {
 				start = i;
 				break;
@@ -35,7 +35,7 @@ public class MinSubArray {
 			}
 		}
 	}
-	
+
 	/** Method to verify the subarray is final */
 	public void checkCandidateSubArrayFinal(int arr[]) {
 		int size = arr.length;
@@ -65,14 +65,14 @@ public class MinSubArray {
 				break;
 			}
 		}
-		System.out.println("\nThe start and end indices are "+start+" and "+end);
+		System.out.println("\nThe start and end indices are " + start + " and " + end);
 	}
-	
-	public static void main (String[] args) {
-		int arr[] = {10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60};
+
+	public static void main(String[] args) {
+		int arr[] = { 10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60 };
 		System.out.println("Given array");
-		for(int num: arr)
-			System.out.print(num+" ");
+		for (int num : arr)
+			System.out.print(num + " ");
 		MinSubArray obj = new MinSubArray();
 		obj.findCandidateSubArray(arr);
 		obj.checkCandidateSubArrayFinal(arr);
