@@ -1,7 +1,5 @@
 package sum;
 
-import sorting.MergeSort;
-
 public class TwoSumSorted {
     //Approach uses two sum solution but does not use the sorted property of the array
     /*private int[] twoSum(int[] numbers, int target) {
